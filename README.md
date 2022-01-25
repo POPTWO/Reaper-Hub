@@ -2505,7 +2505,7 @@ local library = {
 							if item then
 								for i, v in pairs(dropdown.items) do
 									if v == value then
-										table.clear(dropdown.items, i)
+										v.Destroy()
 									end
 								end
 								dropdown.ItemsFrame.Size = UDim2.fromOffset(dropdown.Main.Size.X.Offset, math.clamp(#dropdown.items * item.AbsoluteSize.Y, 20, 156) + 4)
