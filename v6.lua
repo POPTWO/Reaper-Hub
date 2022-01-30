@@ -1,5 +1,5 @@
 repeat wait() until game:IsLoaded()
-wait(9)
+wait(1)
 if _G.Team == "Pirate" then
 	for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.MouseButton1Click)) do
 		v.Function()
